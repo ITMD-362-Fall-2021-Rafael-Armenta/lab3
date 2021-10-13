@@ -196,6 +196,9 @@ html {
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
+	background-color: grey;
+	font-family: Tahoma, Cursive, sans-serif;
+	line-height: 2em;
 }
 
 label {
@@ -204,5 +207,89 @@ label {
 
 /* ===== LAYOUT STYLES ====== */
 
+h1, p 	{
+	text-align: center;
+}
+
+h1	{
+	font-size: 2em;
+	background-color: #666666;
+	border-radius: 5em;
+	padding: 0.5em;
+}
+
+p	{
+	padding: 1em;
+	font-size: 1.25em;
+}
+
+ol	{
+	background-color:  #666666;
+	line-height: 2em;
+	padding: 0.5em;	
+	text-align: left;
+	font-size: 1em;
+}
+
+form {
+  width:auto;
+  display: block;
+  margin: auto;
+}
+
+input {
+  width: 95%;
+	padding: 0.5em;
+}
+
+#input-email	{
+	border-radius: 0.4em;
+}
+
+#age-verification {
+  float: left;
+	width: 15%;
+  height: 35px;
+}
+
+#input-age-verification {
+	background-color: grey;
+  padding: 1em;
+	margin: 1em;
+}
+
+#input-submit	{
+	padding: 0.5em;
+	text-align: center;
+
+}
+#submit	{
+	width: 50%;
+}
+
 
 /* ===== STATE STYLES ======= */
+@media screen and (min-width: 900px)	{
+	
+	form	{
+		width: 50%;
+	}
+
+	input {
+		width: 95%;
+		padding: 0.5em;
+	}
+
+	#age-verification {
+		height: 25px;
+	}
+
+	#input-age-verification {
+		padding-left: 12em;
+	}
+
+	#submit	{
+		width: 25%;
+	}
+	
+}
